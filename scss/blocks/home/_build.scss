@@ -2,9 +2,14 @@
    position: relative;
    padding: 140px 0;
    background-color: #012F34;
+   overflow: hidden;  
    
    @media only screen and (max-width: 770px) {
       padding: 100px 0;
+   }
+   
+   @media only screen and (max-width: 450px) {
+      padding: 64px 0;
    }
    
    &::after{
@@ -48,6 +53,11 @@
             margin-bottom: 64px;
          }
          
+         @media only screen and (max-width: 450px) {
+            width: 240px;
+            margin-bottom: 194px;
+         }
+         
          &::before{
             content: '';
             position: absolute;
@@ -64,10 +74,18 @@
             margin-left: 95px;
          }
          
+         @media only screen and (max-width: 450px) {
+            margin-left: 0;
+         }
+         
          
          .build__item{
             margin-bottom: 32px;
             position: relative;
+
+            @media only screen and (max-width: 450px) {
+               margin-bottom: 196px;
+            }
             
             &::before{
                content: '';
@@ -78,6 +96,11 @@
                background-repeat: no-repeat;
                background-size: cover;
                left: -95px;
+               
+               @media only screen and (max-width: 450px) {
+                  left: 40%;
+                  top: -100%;
+               }
             }
             
             &:nth-child(2){
@@ -98,12 +121,21 @@
                margin-bottom: 16px;
                color: $tomato;
                
+               @media only screen and (max-width: 450px) {
+                  text-align: center;
+               }
+               
             }
             
             .build__text{
                width: 445px;
                color: $white;
                opacity: .8;
+               
+               @media only screen and (max-width: 450px) {
+                  width: 327px;
+                  text-align: center;
+               }
             }
          }
       }
