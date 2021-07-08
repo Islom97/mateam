@@ -203,7 +203,7 @@ ul {
 
 @media only screen and (max-width: 450px) {
   .intro::after {
-    right: 20px;
+    right: 10px;
   }
 }
 
