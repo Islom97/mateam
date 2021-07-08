@@ -849,3 +849,9 @@ ul {
   color: #fff;
   opacity: 0.6;
 }
+
+@media only screen and (max-width: 450px) {
+  .footer .footer__list .flex .footer__subtext {
+    text-align: center;
+  }
+}

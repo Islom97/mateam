@@ -89,6 +89,10 @@
          .footer__subtext{
             color: $white;
             opacity: 0.6;
+
+            @media only screen and (max-width: 450px) {
+               text-align: center;
+            }
          }
       }
       
