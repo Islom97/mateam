@@ -1,0 +1,111 @@
+.build{
+   position: relative;
+   padding: 140px 0;
+   background-color: #012F34;
+   
+   @media only screen and (max-width: 770px) {
+      padding: 100px 0;
+   }
+   
+   &::after{
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 244px;
+      background-image: url(../../../img/home/build-bg.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 0;
+      bottom: 0;
+      
+      @media only screen and (max-width: 770px) {
+         top: 0;
+      }
+   }
+   
+   .build__content{
+      padding-top: 54px;
+      display: flex;
+      justify-content: space-between;
+      
+      @media only screen and (max-width: 770px) {
+         flex-direction: column;
+         
+      }
+      
+      
+      .build__title{
+         position: relative;
+         width: 445px;
+         font-size: 48px;
+         line-height: 48px;
+         font-weight: 700;
+         color: $white;
+         
+         @media only screen and (max-width: 770px) {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 64px;
+         }
+         
+         &::before{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background-color: #F67E7E;
+            top: -54px;
+         }
+      }
+      
+      .build__list{
+         
+         @media only screen and (max-width: 770px) {
+            margin-left: 95px;
+         }
+         
+         
+         .build__item{
+            margin-bottom: 32px;
+            position: relative;
+            
+            &::before{
+               content: '';
+               position: absolute;
+               width: 72px;
+               height: 72px;
+               background-image: url(../../../img/home/build-1.svg);
+               background-repeat: no-repeat;
+               background-size: cover;
+               left: -95px;
+            }
+            
+            &:nth-child(2){
+               &::before{
+                  background-image: url(../../../img/home/build-2.svg);
+               }
+            }
+            &:nth-child(3){
+               &::before{
+                  background-image: url(../../../img/home/build-3.svg);
+               }
+            }
+            
+            .build__subtitle{
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 28px;
+               margin-bottom: 16px;
+               color: $tomato;
+               
+            }
+            
+            .build__text{
+               width: 445px;
+               color: $white;
+               opacity: .8;
+            }
+         }
+      }
+   }
+}

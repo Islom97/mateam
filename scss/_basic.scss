@@ -1,0 +1,29 @@
+$dark-green: #014E56;
+$tomato: #F67E7E;
+$white: #fff;
+
+*, *::before, *::after{
+   padding: 0;
+   margin: 0;
+   box-sizing: inherit;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   font-family: 'Livvic', sans-serif;
+   background-color: $dark-green;
+   font-size: 15px;
+   line-height: 25px;
+   font-weight: 600;
+}
+
+a{
+   display: inline-block;
+   text-decoration: none;
+}
+ul{
+   list-style-type: none;
+}
