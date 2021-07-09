@@ -20,15 +20,20 @@
                <img class="logo__img" src="./img/home/myteam.svg" alt="logo" width="128" height="32">
             </a>
 
-            <img class="burger-menu" src="./img/home/burger-menu.svg" alt="burger-menu" width="20" height="17">
-
-            <nav class="nav">
-               <ul class="nav__list">
+            <nav class="nav" id="menuToggle">
+               <input type="checkbox" />
+               <span></span>
+               <span></span>
+               <span></span>
+               <ul class="nav__list" id="menu">
                   <li class="nav__item">
                      <a href="./index.html" class="nav__link">home</a>
                   </li>
                   <li class="nav__item">
                      <a href="./about.html" class="nav__link">about</a>
+                  </li>
+                  <li class="nav__item" id="none">
+                     <a href="./about.html" class="nav__link">contact us</a>
                   </li>
                </ul>
             </nav>

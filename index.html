@@ -17,16 +17,21 @@
             <a class="logo" href="#">
                <img class="logo__img" src="./img/home/myteam.svg" alt="logo" width="128" height="32">
             </a>
-
-            <img class="burger-menu" src="./img/home/burger-menu.svg" alt="burger-menu" width="20" height="17">
             
-            <nav class="nav">
-               <ul class="nav__list">
+            <nav class="nav" id="menuToggle">
+               <input type="checkbox" />
+               <span></span>
+               <span></span>
+               <span></span>
+               <ul class="nav__list" id="menu">
                   <li class="nav__item">
                      <a href="./index.html" class="nav__link">home</a>
                   </li>
                   <li class="nav__item">
                      <a href="./about.html" class="nav__link">about</a>
+                  </li>
+                  <li class="nav__item" id="none">
+                     <a href="./about.html" class="nav__link">contact us</a>
                   </li>
                </ul>
             </nav>
@@ -49,11 +54,11 @@
             </li>
          </ul>
       </section>
-
+      
       <section class="build">
          <div class="container build__content">
             <h2 class="build__title">Build & manage distributed teams like no one else.</h2>
-
+            
             <ul class="build__list">
                <li class="build__item">
                   <h3 class="build__subtitle">Experienced Individuals</h3>
@@ -70,11 +75,11 @@
             </ul>
          </div>
       </section>
-
+      
       <section class="success">
          <div class="container">
             <h2 class="success__title">Delivering real results for top companies. Some of our <span class="green">success stories.</span></h2>
-
+            
             <ul class="success__list">
                <li class="success__item">
                   <p class="success__text">“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
@@ -97,7 +102,7 @@
             </ul>
          </div>
       </section>
-
+      
       <section class="contact">
          <div class="contact__content">
             <h2 class="contact__title">Ready to get started?</h2>
@@ -105,14 +110,14 @@
          </div>
       </section>
    </main>
-
+   
    <footer class="footer">
       <ul class="footer__list container">
          <li class="footer__item">
             <a href="index.html" class="footer__logo">
                <img src="./img/home/myteam.svg" alt="logo">
             </a>
-
+            
             <ul class="footer__links">
                <li class="footer__links--item">
                   <a href="./index.html" class="footer__link">home</a>
@@ -125,7 +130,7 @@
          <li class="footer__item">
             <p class="footer__text">987 Hillcrest LaneIrvine, CACalifornia 92714Call Us : 949-833-7432</p>
          </li>
-
+         
          <li class="footer__item flex">
             <ul class="social">
                <li class="social__item">
